@@ -1,0 +1,44 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true,
+    "node_modules": true,
+    ".next": true,
+    ".vscode": true,
+    ".eslintrc.json": true,
+    ".gitignore": true,
+    "next-env.d.ts": true,
+    "tsconfig.json": true,
+    "tailwind.config.ts": true,
+    "postcss.config.js": true,
+    "package-lock.json": true,
+    "components.json": true
+  },
+  "hide-files.files": [
+    "node_modules",
+    ".next",
+    ".vscode",
+    ".eslintrc.json",
+    ".gitignore",
+    "next-env.d.ts",
+    "tsconfig.json",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "package-lock.json",
+    "components.json"
+  ],
+  "editor.tokenColorCustomizations": {
+    "comments": "",
+    "textMateRules": []
+  },
+  "editor.inlineSuggest.showToolbar": "always"
+}

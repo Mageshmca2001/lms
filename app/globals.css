@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  :root {
+    --background: 216 50% 96%;
+    --foreground: 0 0% 12%;
+    
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 240 100% 2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 225deg 19% 92%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120deg 3% 89%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.5rem;
+  }
+
+
+  .dark {
+    --background: 240 3% 8%;
+    --foreground: 0 0% 100%;
+    
+    --secondary: 210 3% 12%;
+    --secondary-foreground: 140 3% 77%;
+
+    --accent: 120 4% 22%;
+    --accent-foreground: 0 0% 98%;
+    
+    --border: 210 4% 22%;
+
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  background-color: hsl(var(--background));
+  background: hsl(var(--background));
+}
+.rfm-marquee-container {
+  position: relative;
+}
+
+.rfm-marquee-container::before,
+.rfm-marquee-container::after {
+  background: linear-gradient(to right, hsl(var(--background)), hsl(var(--background)), transparent);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+}
+
+.rfm-marquee-container::after {
+  background: linear-gradient(to left, hsl(var(--background)), hsl(var(--background)), transparent);
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.wmde-markdown {
+  background-color: hsl(var(--secondary)) !important;
+  color: hsl(var(--secondary-foreground)) !important;
+}
+
+.wmde-markdown hr {
+  opacity: 25% !important;
+  height: 1px !important;
+}
