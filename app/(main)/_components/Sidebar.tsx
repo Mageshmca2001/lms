@@ -18,7 +18,7 @@ const Sidebar = () => {
       <div className="flex p-4 justify-between items-center">
         <h1 className="font-bold w-auto h-8 flex items-center justify-center gap-3">
           <div className="!h-8 p-1 !w-8 !aspect-square bg-primary rounded-sm text-lg lg:text-xl flex items-center justify-center !text-background">
-            N
+            MB
           </div>
           <div className="flex text-lg md:text-xl items-center gap-1">
             <span>Tamil</span>
