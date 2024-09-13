@@ -118,7 +118,7 @@ function Page() {
             I don&apos;t know what to write here :D
           </p>
           <div className="flex pt-4 gap-4 items-center flex-wrap">
-            <Link className={buttonVariants({variant:"outline"})} href={"https://github.com/AbdulrahmanNahhas/nahhas-lms"}>Github</Link>
+            <Link className={buttonVariants({variant:"outline"})} href={"https://github.com/Mageshmca2001/lms"}>Github</Link>
             <Button variant={"outline"} disabled>Donate</Button>
           </div>
         </div>
