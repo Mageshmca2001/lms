@@ -21,7 +21,7 @@ const Sidebar = () => {
             N
           </div>
           <div className="flex text-lg md:text-xl items-center gap-1">
-            <span>Nahhas</span>
+            <span>Tamil</span>
             <span className="text-primary">LMS</span>
           </div>
         </h1>
