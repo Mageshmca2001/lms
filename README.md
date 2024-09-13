@@ -1,10 +1,6 @@
-# Nahhas LMS Website
 
-This is a Learning Management System (LMS) website built with Next.js. The purpose of this project is to provide a comprehensive platform for online education, tailored for the Syrian community.
 
-## Demo Video
 
-Check out the demo video for this project on YouTube: [Demo Video](https://youtu.be/0g7wvi6tehQ)
 
 ---
 
@@ -61,7 +57,7 @@ git clone https://github.com/AbdulrahmanNahhas/nahhas-lms.git
 
 ### Navigate to the Project Directory
 ```bash
-cd nahhas-lms
+cd lms
 ```
 
 ### Install Dependencies
@@ -115,19 +111,8 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Usage
 
-To use the LMS website, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. From here, you can access all the features of the platform.
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes. 
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
